@@ -191,7 +191,7 @@ Asena.addCommand({ pattern: 'mp3yt ?(.*)', fromMe: true, desc: "Try this if .son
     await message.sendMessage(infoMessage("Loading..."))
 
     await axios
-      .get(`https://api-anoncybfakeplayer.herokuapp.com/ytmp3?url=${userName}`)
+      .get(`https://api.zeks.xyz/api/ytmp3?apikey=x2RjJIcchXaUJEO8gurQU0Kdrun&url=${userName}`)
       .then(async (response) => {
         const {
           url,
@@ -210,6 +210,37 @@ Asena.addCommand({ pattern: 'mp3yt ?(.*)', fromMe: true, desc: "Try this if .son
       })
       .catch(
         async (err) => await message.sendMessage(errorMessage("Song Not Found!" )),
+      )
+  },
+)
+
+Asena.addCommand({ pattern: 'mp4yt ?(.*)', fromMe: true , desc: "Use this if .videos is not working. Provide the youtube link \n Use mp4yt2,mp4yt3 for more quality"}, async (message, match) => {
+
+    const userName = match[1]
+
+    if (!userName) return await message.sendMessage(errorMessage("Provide the video"))
+
+    await message.sendMessage(infoMessage("Loading..."))
+
+  await axios
+      .get(`https://api-anoncybfakeplayer.herokuapp.com/ytmp4?url=${userName}`)
+      .then(async (response) => {
+        const {
+          quality,
+          url,	
+        } = response.data.result[0]
+
+        const profileBuffer = await axios.get(url, {responseType: 'arraybuffer'})
+
+        const msg = `*${"Quality"}*: ${quality}`
+	    
+
+        await message.sendMessage(Buffer.from(profileBuffer.data), MessageType.video, {
+          caption: msg,
+        })
+      })
+      .catch(
+        async (err) => await message.sendMessage(errorMessage("Error.\n Filesize exceeded or invalid link" )),
       )
   },
 )
