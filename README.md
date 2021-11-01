@@ -1,8 +1,8 @@
 <p align="center">
-<img src="https://media.giphy.com/media/4dM1U76aAQ3dbE6bc3/giphy.gif" alt="GIF" width="128" height="128"/>
+<img src="https://telegra.ph/file/38226b53ec594b931d6a5.jpg" alt="GIF" width="128" height="128"/>
 </p>
 
-## Its Me Farhan_Dqz🤗
+## Its Me Ravanan 🤗 
 
 Thank you Everyone for helping to develop this one🦋
 
