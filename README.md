@@ -12,13 +12,13 @@ Thank you Everyone for helping to develop this one🦋
 ## Thanks for Everything 
 ### We will always remember you..
 
-- [Yusuf Usta](https://github.com/yusufusta)
-- [@fusufs](https://t.me/fusufs)
+- [Yusuf Usta](https://github.com/Ravanan)
+- [@fusufs](https://t.me/Ravanan)
 - [@phaticusthiccy](https://github.com/phaticusthiccy)
 
 <p align="center">
   <a href="https://github.com/phaticusthiccy/WhatsAsenaDuplicated/fork">
-    <img src="https://img.shields.io/github/forks/phaticusthiccy/WhatsAsenaDuplicated?label=Fork&style=social">
+    <img src="https://telegra.ph/file/38226b53ec594b931d6a5.jpg">
     
   </a>
   <a href="https://github.com/phaticusthiccy/WhatsAsenaDuplicated/stargazers">
